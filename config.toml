@@ -1,0 +1,39 @@
+baseurl = "http://tomre.es/"
+languageCode = "en-us"
+title = "Tom Rees"
+theme = "hugo-steam-theme"
+disqusShortname = "spf13"
+paginate = 10
+pygmentsstyle = "xcode"
+
+[params]
+
+	title = "Tom Rees"
+	subtitle = "Web Hacking. Data Science. Occasional Soldering."
+	copyright = "Released under the MIT license."
+
+	# You can choose between green, orange, red and blue.
+	themeColor = "red"
+	# Enable Google Analytics be inserting your tracking code
+	googleAnalytics = ""
+
+	# To provide some metadata for search engines and the about section in the footer
+	# feel free to add a few information about you and your website.
+	name = "Tom Rees"
+	bio = "Hacker, entrepreneur, and founder of [DataPress](http://datapress.com).<br/>I live in London, I drink strong coffee and I love brightly coloured graphs."
+	description = "Projects and blog posts by Tom Rees."
+	location = "London" # optional
+	twitter = "zephod" # optional
+	github = "zephod" # optional
+
+	# Enable a comment system
+	# You can choose between Disqus or Google Plus by setting comments
+	# to disqus or googleplus. For using Disqus you need to enter your
+	# shortname in disqusShortname at the top of the configs. 
+	# comments = "disqus"
+
+	# Customize or translate the strings
+	keepReadingStr = "Keep reading"
+	backtotopStr = "Back to top"
+	shareStr = "Share"
+	pageNotFoundTitle = "404 - Page not found"

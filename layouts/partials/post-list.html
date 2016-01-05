@@ -1,0 +1,12 @@
+{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "post") }}
+{{ range $paginator.Pages }}
+<article class="preview">
+    <header>
+        <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Params.thumb_title }}</a></h2>
+        <a href="{{ .Permalink }}"><img src="{{ .Params.thumb_img }}" class="post-thumbnail"/></a>
+    </header>
+    <section class="post-excerpt">
+        <a class="excerptlink" href="{{ .Permalink }}"><p>{{ .Description | markdownify }}</p></a>
+    </section>
+</article>
+{{ end }}

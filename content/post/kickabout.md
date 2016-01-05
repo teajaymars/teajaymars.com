@@ -15,7 +15,7 @@ For the sake of posterity, and for completeness, I am including links to softwar
 
 [Kickabout](http://www.funorb.com/info.ws?game=kickabout) was a highly ambitious multiplayer football game. The goal was to test realtime multiplayer mechanics over TCP - which turns out to be a very tough problem.
 
-* Fortunately, a year after launch the IETF standardised [WebSockets](https://en.wikipedia.org/wiki/WebSocket), which provides a much more elegant solution.
+* Fortunately, a year after launch, the IETF standardised [WebSockets](https://en.wikipedia.org/wiki/WebSocket), which provides a much more elegant solution.
 * Sadly, it means the game quickly became obsolete!
 
 Kickabout took eighteen months to develop, featured an auction house, player customisation, and 4v4 in-browser multiplayer. The game had over **half a million** players and a strong community during the 2010 World Cup.

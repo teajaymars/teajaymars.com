@@ -17,6 +17,9 @@ section.author p.bio {
   font-size: 13px;
   line-height: 1.5em;
 }
+section.post-tags {
+  display: none;
+}
 /* Front Page */
 .home-template main {
   max-width: 600px;

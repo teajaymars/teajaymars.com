@@ -1,14 +1,7 @@
 #!/bin/bash
 
-SOURCE_FOLDER=public
 DEST_BUCKET=tomre.es
 CONFIG_FILE=s3cfg
-
-if [ ! -e $SOURCE_FOLDER ] ; then
-  echo "I can't see the folder \"$SOURCE_FOLDER\"."
-  echo "Run this script from the root of the repository."
-  exit -3
-fi
 
 if [ ! -e $CONFIG_FILE ] ; then
   echo "I can't see the config file \"$CONFIG_FILE\"."
@@ -16,18 +9,22 @@ if [ ! -e $CONFIG_FILE ] ; then
   exit -3
 fi
 
-sudo killall hugo
-rm -rf $SOURCE_FOLDER
-hugo
+TMP=$(mktemp -d)
+hugo --theme="hugo-steam-theme" --destination="$TMP"
 
 # http://s3tools.org/usage
+# http://stackoverflow.com/questions/14807702/amazon-s3-static-website-doesnt-serve-css-or-js-files
+# --no-mime-magic because the magic delivers CSS files as text/plain?!
+# (maybe a problem on my mac)
 s3cmd sync \
   --force \
   --no-preserve \
   --exclude=".DS_Store" \
   --delete-removed \
   --acl-public \
+  --no-mime-magic \
   --config=$CONFIG_FILE \
-  $SOURCE_FOLDER/ \
+  $TMP/ \
   s3://$DEST_BUCKET/
 
+rm -rf $TMP

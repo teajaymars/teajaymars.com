@@ -17,7 +17,7 @@ aliases = [
 
 ## [Hacking Scrabble](http://blog.zephod.com/post/28118665268/hacking-scrabble)
 
-**For the lazy:** Not interested in all this data wrangling? Skip straight to these summary graphics to improve your Scrabble game:
+**TL;DR:** Skip straight to these summary graphics to improve your Scrabble game:
 
 [![Jump to Hacking Scrabble results](/img/hacking_scrabble_preview.png)](#results)
 

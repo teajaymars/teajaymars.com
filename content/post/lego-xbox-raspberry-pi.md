@@ -2,11 +2,10 @@
 date = "2012-12-03T22:49:49Z"
 draft = false
 title = "HOWTO: Build an RC Car using Lego and a Raspberry Pi"
-disable_comments = true
 
 thumb_img = "/img/thumb/raspi.jpg"
 thumb_title = "Lego & Raspberry Pi"
-description = "Linux User feature: Constructing an RC car with Raspberry Pi."
+description = "Building an RC car with Raspberry Pi & a game pad."
 
 aliases = [
     "post/37120089376/lego-xbox-raspberry-pi"

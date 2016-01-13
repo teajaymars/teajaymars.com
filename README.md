@@ -6,9 +6,10 @@ Prerequisites:
   * Create a file in this directory called `s3cfg` using `s3cmd --configure`.
   * Give it credentials to access the tomre.es bucket on S3.
 
-Development:
+Development: (two terminals)
 
-    hugo server --watch
+    hugo server --watch --buildDrafts
+    grunt watch
 
 Deployment:
 

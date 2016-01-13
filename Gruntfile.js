@@ -15,19 +15,25 @@ module.exports = function(grunt){
     ],
     coffee: {
       app: {
-        files: {
-          "static/gen/app.js" : "app.coffee"
-        },
-        options: { 
-          sourceMap: debug,
-        }
+        files: { "static/gen/app.js" : "app.coffee" },
+        options: { sourceMap: debug }
+      },
+      organograms: {
+        files: { "static/gen/organograms.js" : "static/organograms/organograms.coffee" },
+        options: { sourceMap: debug }
       }
     },
     less: {
       app: {
-        files: {
-          "static/gen/app.css" : "app.less"
-        },
+        files: { "static/gen/app.css" : "app.less" },
+        options: {
+          sourceMap: debug,
+          sourceMapFileInline: true,
+          outputSourceFiles: true,
+        }
+      },
+      organograms: {
+        files: { "static/gen/organograms.css" : "static/organograms/organograms.less" },
         options: {
           sourceMap: debug,
           sourceMapFileInline: true,
@@ -38,7 +44,7 @@ module.exports = function(grunt){
     watch: {
       less: {
         files: "**/*.less",
-        tasks: "less:app"
+        tasks: "less"
       },
       coffee: {
         files: "**/*.coffee",

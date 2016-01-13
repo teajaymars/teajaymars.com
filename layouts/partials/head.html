@@ -21,4 +21,7 @@
 
     {{ "<!-- Stylesheet for theme color -->" | safeHTML }}
     {{ partial (printf "themes/%s-theme" .Site.Params.themeColor) . }}
+
+    {{/* jQuery in the header makes it much quicker to write simple dynamic content posts */}}
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>

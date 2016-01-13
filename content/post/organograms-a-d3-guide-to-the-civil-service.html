@@ -1,0 +1,61 @@
++++
+date = "2014-03-01T13:32:49Z"
+draft = false
+title = "Organograms Explorer: A D3 Guide to the Civil Service"
+
+thumb_img = "/img/thumb/organograms.png"
+thumb_title = "Organograms Explorer"
+description = "D3 App: Explore roles & salaries within the UK Civil Service."
++++
+
+<p>This is personal side-project which was picked up for further development by the UK Cabinet Office. Smaller agencies such as the <em>Government Procurement Service</em> work best. To see the template break down, try something like <em>Ministry of Justice</em>.</p>
+    
+<div id="organograms-loading">
+  <em style="text-align: center; display: block; height: 100px; line-height: 100px; ">Loading...</em>
+</div>
+<div id="organograms-container" style="display:none;">
+<table id="index-table">
+  <tr>
+    <td class="left">Department:</td>
+    <td class="right"><select style="width: 100%;" id="index"></select></td>
+  </tr>
+</table>
+
+<div id="organogram-view-mode">
+  <div class="organogram-click-hint">&lArr; Try clicking!</div>
+<div class="radio">
+  <label>
+    <input type="radio" class="organogram-button" name="optionsRadios" value="option1" checked="checked" />
+    View as Organisation Chart
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio"  class="organogram-button" name="optionsRadios" value="option2" />
+    View as Money Map
+  </label>
+</div>
+</div>
+
+<div id="organogram-viz"></div>
+</div>
+
+<hr/>
+
+<ul>
+  <li>I used a Python scraper to pull all the <a href="https://data.gov.uk/dataset/staff-organograms-and-pay-civil-service-learning">UK Civil Service Organograms Data</a> from the linked-data triplestore.</li>
+  <li>I learned to hate linked data and triplestores. If you think they are a good idea I can prove you wrong. With science.</li>
+  <li>This data is <strong>out of date!</strong> It was scraped around mid-2012.</li>
+  <li>I wanted to build a communication tool to represent both the hierarchy of roles in the civil service, and the respective pay scales.</li>
+</ul>
+
+<hr/>
+
+
+<script src="/organograms/vendor/modernizr-latest.js"></script>
+<script src="/organograms/vendor/d3.v3.js" charset="utf-8"></script>
+<script src="/organograms/vendor/chosen.jquery.min.js" charset="utf-8"></script>
+<script src="/gen/organograms.js"></script>
+<link rel="stylesheet" href="/organograms/chosen.min.css"/>
+<link rel="stylesheet" href="/gen/organograms.css"/>
+

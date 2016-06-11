@@ -12,6 +12,7 @@ REPO=zephod/tomre.es.git
 # rm -rf public
 # git subtree add --prefix=public git@github.com:$REPO gh-pages --squash
 hugo --theme="hugo-steam-theme"
+echo "tomre.es" > public/CNAME
 git commit -a -m "[./deploy.sh] $MESSAGE"
 git push origin master
 git subtree push --prefix=public git@github.com:$REPO gh-pages

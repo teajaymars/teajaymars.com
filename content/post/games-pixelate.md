@@ -8,7 +8,7 @@ thumb_title = "Pixelate"
 description = "Lumines-like game in 3D."
 +++
 
-> !For the sake of posterity, and for completeness, I am including links to software I wrote in my first job. I graduated from the University of Cambridge in 2007 and was hired to write Java browser games to complement [Runescape](http://runescape.com).
+> For the sake of posterity, and for completeness, I am including links to software I wrote in my first job. I graduated from the University of Cambridge in 2007 and was hired to write Java browser games to complement [Runescape](http://runescape.com).
 
 ## [Pixelate](http://www.funorb.com/info.ws?game=pixelate)
 

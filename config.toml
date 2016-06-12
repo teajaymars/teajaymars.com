@@ -1,4 +1,4 @@
-baseurl = "http://tomre.es/"
+baseurl = "https://tomre.es/"
 languageCode = "en-us"
 title = "Tom Rees"
 theme = "hugo-steam-theme"

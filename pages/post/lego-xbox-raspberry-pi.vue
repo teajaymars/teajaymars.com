@@ -225,11 +225,15 @@ if event.key==&#39;X1&#39;: steer = int( servoMid +
     </p>
     <h2 id="completion">Completion</h2>
     <p>Here’s my DIY-RC-Car in action. Enjoy!</p>
+
     <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/X7YRqCCBDBU"
+      title="YouTube video player"
       frameborder="0"
-      src="http://www.youtube.com/embed/X7YRqCCBDBU"
-      width="600"
-      height="400"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
     ></iframe>
   </article>
 </template>

@@ -7,6 +7,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       link: [
+        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
         { rel: "preconnect", href: "https://fonts.googleapis.com" },
         {
           rel: "preconnect",

@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   // Add google font
   app: {
     head: {
+      title: "@teajaymars",
       link: [
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
         { rel: "preconnect", href: "https://fonts.googleapis.com" },

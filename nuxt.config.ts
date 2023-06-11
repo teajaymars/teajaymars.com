@@ -1,7 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  modules: ["nuxt-gtag"],
+
   css: ["~/assets/compiled.css"],
-  target: "static",
+
+  gtag: {
+    id: "G-TX170K2WL1",
+  },
 
   // Add google font
   app: {

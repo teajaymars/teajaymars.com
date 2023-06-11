@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Organograms</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" integrity="sha512-AFwxAkWdvxRd9qhYYp1qbeRZj6/iTNmJ2GFwcxsMOzwwTaRwz2a/2TX225Ebcj3whXte1WGQb38cXE5j7ZQw3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.3.10/d3.min.js" integrity="sha512-VYn1y+bggsbHhb/8K70B8lisVZnWzm3KBAkQ/sBp0YTewshuj64QJ9ErpES/mCr8uRqGfOayb5MoeegKDY44Bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js" integrity="sha512-xxwB6MnY5MI87ptYSCYVFmRaYTC9VHOY1sya6oo1QfyN+i1Hmxu/0T3x6bssjMNlNI+WsBDCAlN/TNywKDPlQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.1.0/chosen.jquery.min.js" integrity="sha512-B94HjcRgjUw0hfwuVLfelMqHyUp/tO2vZ+7MKdcKU7JM0Acq1wQ3YfwJcOdxW3/Je7K0xm7F03CKzG/oR2SLNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css" integrity="sha512-yVvxUQV0QESBt1SyZbNJMAwyKvFTLMyXSyBHDO4BG5t7k/Lw34tyqlSDlKIrIENIzCl+RVUNjmCPG+V/GMesRw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="/organograms/organograms.js"></script>
+    <link rel="stylesheet" href="/organograms/organograms.css"/>
+</head>
+<body>
+
+  <div id="organograms-loading">
+    <em style="text-align: center; display: block; height: 100px; line-height: 100px; ">Loading...</em>
+  </div>
+  <div id="organograms-container" style="display:none;">
+  <table id="index-table">
+    <tr>
+      <td class="left">Department:</td>
+      <td class="right"><select style="width: 100%;" id="index"></select></td>
+    </tr>
+  </table>
+
+  <div id="organogram-view-mode">
+    <div class="organogram-click-hint">&lArr; Try clicking!</div>
+  <div class="radio">
+    <label>
+      <input type="radio" class="organogram-button" name="optionsRadios" value="option1" checked="checked" />
+      View as Organisation Chart
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio"  class="organogram-button" name="optionsRadios" value="option2" />
+      View as Money Map
+    </label>
+  </div>
+  </div>
+
+  <div id="organogram-viz"></div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+@charset "utf-8";
+@use "sass:color";
+
+/* Import a bit of Bulma */
+@import "bulma/sass/utilities/initial-variables.sass";
+
+$red: #f05948;
+$link: $red;
+$grey: #596364;
+$body-color: $grey;
+
+$family-sans-serif: "Roboto Condensed";
+$family-serif: "Merriweather";
+
+$family-primary: $family-serif;
+
+:root {
+  --link: #{$link};
+  --body-color: #{$body-color};
+}
+
+// $container-max-width: 660px;
+.article {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* [override] Disable fullHD breakpoint */
+$fullhd-enabled: false;
+
+/* [override] flat forms */
+$input-shadow: none;
+$control-border-width: 2px;
+
+// /* [override] flat cards */
+// $card-shadow: 0 2px 3px rgba($black, 0.1), 0 0 0 2px rgba($black, 0.1);
+// $card-footer-border-top: 2px solid $grey-lighter;
+
+// /* [override] flat tables */
+// $table-cell-border-width: 0 0 2px !default;
+
+$media-border-color: $grey;
+$hr-background-color: $media-border-color;
+$hr-height: 1px;
+
+// /* Set up sensible design defaults */
+// $footer-background-color: $grey-darker !default;
+// $footer-color: $white !default;
+
+// $navbar-height: 8rem !default;
+
+// // Image natural height is 186px
+// $navbar-item-img-max-height: 93px !default;
+
+$body-line-height: 1.7;
+$body-font-size: 17px;
+
+@import "bulma/bulma.sass";
+
+// /* Theme-wide tweak */
+// .title {
+//   font-weight: 200;
+//   text-transform: uppercase;
+// }

@@ -1,0 +1,19 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build:css": "sass --no-source-map -I node_modules assets/main.scss assets/compiled.css",
+    "build": "yarn build:css && yarn generate",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate"
+  },
+  "devDependencies": {
+    "@types/node": "^18",
+    "nuxt": "^3.5.2",
+    "sass": "^1.63.3"
+  },
+  "dependencies": {
+    "bulma": "^0.9.4",
+    "dayjs": "^1.11.8"
+  }
+}

@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build:css": "sass --no-source-map -I node_modules assets/main.scss assets/compiled.css",
-    "build": "yarn build:css && yarn generate",
+    "build": "yarn build:css && nuxt generate",
     "dev": "nuxt dev",
     "generate": "nuxt generate"
   },

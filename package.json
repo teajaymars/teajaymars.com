@@ -1,6 +1,9 @@
 {
   "name": "nuxt-app",
   "private": true,
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "build:css": "sass --no-source-map -I node_modules assets/main.scss assets/compiled.css",
     "build": "yarn build:css && nuxt generate",

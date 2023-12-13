@@ -39,12 +39,6 @@ const posts = ref<Post[]>([
     img: "/img/thumb/scrabble2.jpg",
   },
   {
-    link: "filter",
-    title: "/usr/bin/filter",
-    description: "Bash extension for renaming groups of files.",
-    img: "/img/thumb/filter.png",
-  },
-  {
     link: "hacking-scrabble-part-1",
     title: "Hacking Scrabble #1",
     description: "LifeHacker feature on Scrabble memory techniques.",
